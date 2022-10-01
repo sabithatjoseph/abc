@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% block title %}
+About Us
+{% endblock %}
+</head>
+{% block content %}
+<body>
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 py-5 pr-0 parallax-window" data-parallax="scroll" data-image-src="{% static 'images/car2.jpeg' %}">
+  <div class="container">
+    <div class="col-sm-6 offset-sm-6 py-5">
+      <h2 class="wow bounceInLeft" data-wow-delay=".25s">ABOUT US</h2>
+      <hr/>
+        <h3 class="wow bounceInUp">Best Taxi Services In Bahrain</h3>
+        <p class="wow bounceInRight" data-wow-delay=".25s">Being one of the best taxi services in Bahrain, Limo Bahrain provides you with various transportation services in and out of Bahrain. Our services include city travel, hospital emergencies, wedding ceremony travel, luggage transportation, tour and trips in Bahrain and more. Apart from Bahrain travel services, we also provide airport transport services, for travelling to and from Saudi Arabia, Dammam, Riyadh, Al-Khober, Jubail City and Ras Tanoura. </p>
+
+    </div>
+    <div class=" col-md-6 border-primary text-center">
+      <h4 class="mb-3">Do you require a taxi for your airport travel?</h4>
+      <h4 class="mb-3">Are you having a hospital emergency in Bahrain?</h4>
+
+    </div>
+    <div class="col-md-6 border-primary text-center">
+      <h4 class="mb-3">Are you in need of local taxi services in Bahrain?</h4>
+      <h4 class="mb-3">Are you in a hurry for attending your corporate meeting?</h4>
+    </div>
+    <h3 class="text-center">ABC Limousine guarantees the best travel you have ever made.</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="container">
+
+    <h2>Chauffeur Service</h2>
+    <p>Are you looking for the best chauffeur services in Bahrain? Limo Bahrain makes it easy for you to book chauffeurs at affordable rates. You can easily book chauffeur though WhatsApp or email and get your trip within minutes. We also provide shuttle services within the Kingdom of Bahrain, helping out organizations for both corporate and private transportation services. Our chauffeurs are well trained so as to make your travel easy, safe and prompt. </p>
+<!--    <div>-->
+    <video autoplay loop muted>
+      <source src="{% static 'images/video2.mp4' %}" type="mp4/video">
+    </video>
+<!--      </div>-->
+  </div>
+</div>
+</body>
+{% endblock %}
+</html>

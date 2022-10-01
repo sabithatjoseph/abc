@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    Testimonials
+    {% endblock %}
+
+
+</head>
+{% block content %}
+<body>
+<!--<section id="testimonials" style="display: flex; justify-content:center; align-items:center; flex-direction:column; width:100%;">-->
+<!--    <div class="testimonial-heading py-5 mt-5" style="margin-0px; padding:0px; box-sizing:border-box; letter-spacing:1px; justify-content-center">-->
+<!--        <span class="text-center">Whats</span>-->
+<!--        <h1>Our Client says</h1>-->
+<!--     </div>-->
+<!--    <div class="testimonial-box-container" style="justify-content:center;">-->
+<!--        <div class="testimonial-box" style="width:500px; box-shadow:2px 2px 30px rgba(0,0,0,0.1); cursor:pointer;">-->
+<!--            <div class="profile">-->
+<!--                <div class="profile-img" >-->
+<!--                    <img src="{% static 'images/car-1.jpeg' %}" alt="img" style="width:50px; height:50px; border-radius:50%; overflow:hidden; margin-right:10px;object-fit:cover; object-position:center; display-flex; align-items:center;">-->
+<!--                </div>-->
+<!--                <div class="profile-name" style="display:flex; flex-direction:column;">-->
+<!--                    <strong>Marquee</strong>-->
+<!--                    <h6>Customer</h6>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="review"></div>-->
+<!--            <i class="fas fa-star"></i>-->
+<!--            <i class="fas fa-star"></i>-->
+<!--            <i class="fas fa-star"></i>-->
+<!--            <i class="fas fa-star"></i>-->
+<!--            <i class="fa fa-star"></i>-->
+<!--            </div>-->
+
+<!--        <div class="client-comments">-->
+<!--           <p>A group of friends and I used ABC to chauffeur us from Riyadh, KSA to Juffair, Bahrain. Let me tell you, it was worth the money. Jasser was our drive on both legs of the trip. He was very kind, professional, and made sure that we got to and from our destination in a very timely manner. If we needed to stop, he did. He was very accommodating. I would definitely use this company again.</p>-->
+<!--         </div>-->
+<!--   </div>-->
+<!--</section>-->
+
+
+<!--<&#45;&#45;&#45;&#45;testimonial-&ndash;&gt;-->
+
+<section id="testimonial" class="dark_bg_orange layout_padding cross_layout_o padding_top_0 py-5 mt-5">
+        <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+               <div class="full center">
+                 <h2 class="heading_main orange_heading text-uppercase text-center">Clients Says</h2>
+               </div>
+             </div>
+           </div>
+           <div class="row py-5">
+              <div class="col-md-12">
+                <div class="full" style=" box-shadow:2px 2px 30px rgba(0,0,0,0.1); cursor:pointer;">
+                  <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                           <ul class="carousel-indicators">
+                               <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
+                               <li data-target="#testimonial_slider" data-slide-to="1"></li>
+                               <li data-target="#testimonial_slider" data-slide-to="2"></li>
+                           </ul>
+                     <!-- The slideshow -->
+                     <div class="carousel-inner">
+                        <div class="carousel-item active py-2">
+                           <div class="testomonial_section">
+                              <div class="full center container">
+                                <div class="client_img">
+                                  <img src="{% static 'images/test1.jpg' %}" alt="image"  style="width:100px; height:100px; object-fit:cover;"  >
+
+
+                              <div class="full testimonial_cont text_align_center">
+                                  <strong>Due Markes</strong><br><strong class="ornage_color">Customer</strong><br>
+                                  <p style="">I use them whenever I'm in Bahrain -- easy to book via Whatsapp, they have nice cars, the pricing is reasonable.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item py-2">
+
+                           <div class="testomonial_section container">
+                              <div class="full center container">
+                                <div class="client_img">
+                                  <img src="{% static 'images/test2.jpg' %}" alt="#" style="width:100px; height:100px; object-fit:cover;">
+
+                              <div class="full testimonial_cont text_align_center">
+                                <p><strong>Jeff Diz</strong><br>
+                                    <strong class="ornage_color">Customer</strong><br></p>
+                                    <p>We used ABC this week and the trip could not have been better. From the on time pickup and throughout our five hour trip, every part of their service was perfect. Our driver was considerate, professional, and very knowledgeable regarding all things Bahrain. We will certainly contact ABC for any driving needs in the future. Thank you!</p>
+
+                              </div>
+                              </div>
+                              </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item py-2">
+
+                           <div class="testomonial_section">
+                              <div class="full center container">
+                                <div class="client_img">
+                                  <img src="{% static 'images/test3.jpg' %}" alt="#" style="width:100px; height:100px; object-fit:cover;">
+
+                              <div class="full testimonial_cont text_align_center">
+                                <p><strong>Margereta Michel</strong><br>
+                                    <strong class="ornage_color">Customer</strong><br></p>
+                                    <p>A group of friends and I used ABC to chauffeur us from Riyadh, KSA to Juffair, Bahrain. Let me tell you, it was worth the money. Jasser was our drive on both legs of the trip. He was very kind, professional, and made sure that we got to and from our destination in a very timely manner. If we needed to stop, he did. He was very accommodating. I would definitely use this company again.</p>
+
+                                   </div>
+                              </div>
+
+                              </div>
+                            </div>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+      </section>
+      <!-- end section -->
+
+
+
+</body>
+{% endblock %}
+</html>
